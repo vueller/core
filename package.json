@@ -1,0 +1,32 @@
+{
+    "name": "@vueller/core",
+    "version": "1.0.0",
+    "description": "Core library for Vueller components",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "test": "npm install --force && npm run build && npm pack",
+        "build": "tsc && vite build",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "vueller",
+        "components",
+        "ui"
+    ],
+    "author": "Gustavo Will da Silva <gug.contato@gmail.com>",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.17",
+        "typescript": "^4.6.4",
+        "vite": "^3.0.0",
+        "vite-plugin-dts": "^4.5.3"
+    }
+}
